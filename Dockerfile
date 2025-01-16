@@ -30,7 +30,7 @@ RUN mvn package ${MAVEN_PARAMS} \
     && rm WebAPI.war
 
 # OHDSI WebAPI and ATLAS web application running as a Spring Boot application with Java 8
-FROM amazoncorretto:8u432-al2023-jre
+FROM amazoncorretto:8u432-al2023-jre@sha256:84b6ea3dec3e59a9223a3be5c575c74f8229980ed21a9abf88b3f7b446965d21
 
 # Any Java options to pass along, e.g. memory, garbage collection, etc.
 ENV JAVA_OPTS=""
